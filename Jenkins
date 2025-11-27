@@ -1,0 +1,16 @@
+Pipeline {
+  agent any {
+    stages {
+      stage ( 'build' ){
+        steps {
+          echo "Pipelinebuild"
+        }
+      }
+      stage ( 'run' ){
+        steps {
+          echo "Pipelinerunning"
+        }
+      }
+    }
+  }
+}
